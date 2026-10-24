@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etkinlikler</title>
+    <meta
+      name="description"
+      content="Kampüs etkinlikleri, konferanslar ve sosyal faaliyetler için detaylı liste."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark">K</span>
+          <span class="brand-text">Kampüs</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Ana menü">
+          <a href="#">Ana Sayfa</a>
+          <a href="#">Hakkımızda</a>
+          <a href="#" class="active">Etkinlikler</a>
+          <a href="#">Duyurular</a>
+          <a href="#">İletişim</a>
+        </nav>
+
+        <a href="#" class="header-button">Katıl</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Yaşamı renklendiren fırsatlar</p>
+            <h1>Etkinlikler</h1>
+            <p class="lead">
+              Üniversite hayatını zenginleştiren konferanslardan, atölyelere,
+              sosyal etkinliklerden kültürel organizasyonlara kadar tüm fırsatlar
+              burada.
+            </p>
+            <div class="hero-actions">
+              <a href="#events" class="primary-btn">Tüm etkinlikleri gör</a>
+              <a href="#" class="secondary-btn">Bize ulaş</a>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="Etkinlik istatistikleri">
+            <div class="stat-box">
+              <strong>32+</strong>
+              <span>Etkinlik</span>
+            </div>
+            <div class="stat-box">
+              <strong>8</strong>
+              <span>Kategori</span>
+            </div>
+            <div class="stat-box">
+              <strong>1200+</strong>
+              <span>Katılımcı</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="filters-section">
+        <div class="container">
+          <div class="filters" aria-label="Etkinlik filtreleri">
+            <button class="chip active" type="button">Hepsi</button>
+            <button class="chip" type="button">Kültür</button>
+            <button class="chip" type="button">Teknoloji</button>
+            <button class="chip" type="button">Sosyal</button>
+            <button class="chip" type="button">Atölye</button>
+            <button class="chip" type="button">Spor</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="events-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Yaklaşan programlar</p>
+              <h2>Öne çıkan etkinlikler</h2>
+            </div>
+            <a href="#" class="text-link">Tümünü göster</a>
+          </div>
+
+          <div class="search-toolbar">
+            <div class="search-field">
+              <label for="eventSearch">Etkinlik ara</label>
+              <input
+                type="text"
+                id="eventSearch"
+                placeholder="Etkinlik başlığı yazın..."
+                aria-label="Etkinlik ara"
+              />
+            </div>
+            <button type="button" id="clearSearch" class="clear-btn">
+              Temizle
+            </button>
+          </div>
+
+          <div class="results-summary" id="resultsSummary">0 etkinlik bulundu</div>
+          <p class="empty-state" id="emptyState" hidden>
+            Aramanıza uygun etkinlik bulunamadı.
+          </p>
+
+          <div class="event-grid">
+            <article class="event-card featured">
+              <div class="event-top">
+                <span class="event-badge">Kültür</span>
+                <span class="event-date">15 Haziran</span>
+              </div>
+              <h3>Gelenek ve Modern Sanat Buluşması</h3>
+              <p>
+                Yerli ve yabancı sanatçıların katılımıyla düzenlenen, resim,
+                müzik ve performansın bir araya geldiği özel gece.
+              </p>
+              <ul class="meta-list">
+                <li>📍 Merkez Kampüs, Sanat Galerisi</li>
+                <li>🕒 18:30 - 21:00</li>
+              </ul>
+              <a href="#" class="card-button">Detaylı bilgi</a>
+            </article>
+
+            <article class="event-card">
+              <div class="event-top">
+                <span class="event-badge">Teknoloji</span>
+                <span class="event-date">18 Haziran</span>
+              </div>
+              <h3>Yapay Zeka ve Gelecek Çalıştayı</h3>
+              <p>
+                AI alanında güncel gelişmeleri ve uygulama örneklerini öğrenerek,
+                sektörel fırsatları keşfedeceğiniz interaktif oturum.
+              </p>
+              <ul class="meta-list">
+                <li>📍 Bilgi Teknolojileri Binası</li>
+                <li>🕒 10:00 - 13:00</li>
+              </ul>
+              <a href="#" class="card-button">Detaylı bilgi</a>
+            </article>
+
+            <article class="event-card">
+              <div class="event-top">
+                <span class="event-badge">Atölye</span>
+                <span class="event-date">21 Haziran</span>
+              </div>
+              <h3>İnovasyon Atölyesi: Proje Geliştirme</h3>
+              <p>
+                Takım çalışmasıyla fikir üretme, prototip hazırlama ve sunum
+                becerilerini geliştiren pratik bir program.
+              </p>
+              <ul class="meta-list">
+                <li>📍 Yenilik Merkezi</li>
+                <li>🕒 14:00 - 17:00</li>
+              </ul>
+              <a href="#" class="card-button">Detaylı bilgi</a>
+            </article>
+
+            <article class="event-card">
+              <div class="event-top">
+                <span class="event-badge">Atölye</span>
+                <span class="event-date">3 Aralık</span>
+              </div>
+              <h3>GitHub Atölyesi</h3>
+              <p>
+                GitHub kullanımı, depolama, düzenleme ve iş birlikçi çalışma
+                akışlarını öğrenerek proje geliştirme becerilerinizi güçlendirin.
+              </p>
+              <ul class="meta-list">
+                <li>📍 Bilgisayar Laboratuvarı</li>
+                <li>🕒 14.00</li>
+              </ul>
+              <a href="#" class="card-button">Detaylı bilgi</a>
+            </article>
+
+            <article class="event-card">
+              <div class="event-top">
+                <span class="event-badge">Sosyal</span>
+                <span class="event-date">25 Haziran</span>
+              </div>
+              <h3>Gönüllülük ve Toplum Etkinliği</h3>
+              <p>
+                Kampüs içindeki sosyal sorumluluk çalışmaları için birlikte
+                hareket ettiğiğimiz, katkı odaklı bir gün.
+              </p>
+              <ul class="meta-list">
+                <li>📍 Açık Alan Etkinlik Sahası</li>
+                <li>🕒 09:30 - 12:30</li>
+              </ul>
+              <a href="#" class="card-button">Detaylı bilgi</a>
+            </article>
+
+            <article class="event-card">
+              <div class="event-top">
+                <span class="event-badge">Spor</span>
+                <span class="event-date">28 Haziran</span>
+              </div>
+              <h3>Yaz Spor Festivali</h3>
+              <p>
+                Futbol, voleybol ve masa tenisi gibi alanlarda rekabetin ve ekip
+                ruhunun ön plana çıktığı sosyal spor organizasyonu.
+              </p>
+              <ul class="meta-list">
+                <li>📍 Spor Kompleksi</li>
+                <li>🕒 11:00 - 17:00</li>
+              </ul>
+              <a href="#" class="card-button">Detaylı bilgi</a>
+            </article>
+
+            <article class="event-card">
+              <div class="event-top">
+                <span class="event-badge">Kültür</span>
+                <span class="event-date">02 Temmuz</span>
+              </div>
+              <h3>Film ve Sinema Kulübü Gösterimi</h3>
+              <p>
+                Üniversite sinema kulübünün hazırladığı özel gösterim ve tartışma
+                oturumu; farklı bakış açılarıyla film deneyimi.
+              </p>
+              <ul class="meta-list">
+                <li>📍 Kültür Merkezi</li>
+                <li>🕒 19:00 - 21:30</li>
+              </ul>
+              <a href="#" class="card-button">Detaylı bilgi</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
